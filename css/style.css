@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700|Fanwood+Text:400,700');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+#map {
+  height: 100%;
+  width: 100%;
+  font: 19px/32px 'Fanwood Text', Georgia, serif;
+  color: black;
+}
+table td {
+  text-align: right;
+  padding-right: 5px;
+  width: 100px;
+}
+.leaflet-pane {
+  z-index: 0;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 0;
+  box-shadow: none;
+}
+table td + td {
+  text-align: left;
+  width: auto;
+}
+.leaflet-container {
+  cursor: crosshair !important;
+  background-color: #cdd2d4;
+}
+.crosshair {
+  cursor: crosshair;
+}
+strong {
+  font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+  font: 36px/48px 'Vollkorn', serif;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-weight: 700;
+  margin: 0 auto 10px;
+}
+h5 {
+  font: 18px/24px 'Vollkorn', serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin: 0 auto 10px;
+}
+#panel {
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  width: 300px;
+  height: 150px;
+  line-height: 150px;
+  margin-left: -153px;
+  top: 10px;
+  background-color: #000;
+  background-size: 100% auto;
+  color: #fff;
+  text-weight: bold;
+  text-align: center;
+  padding: 3px;
+  display: none;
+  z-index: 500;
+}
+#dialog {
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  width: 300px;
+  margin-left: -160px;
+  top: 50%;
+  margin-top: -250px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px 10px 20px 15px;
+  display: none;
+  z-index: 500;
+}
+#dialog h1 {
+  text-align: center;
+}
+#dialog h1 .zz {
+  color: #4576b2;
+}
+#dialog li {
+  margin-bottom: 10px;
+}
+#dialog .buttons {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#dialog button, #tryagain {
+  margin-top: 10px;
+  font-weight: 700;
+  background-color: #444;
+  color: white;
+  padding: 18px 15px 15px 18px;
+  border-width: 0;
+  border-bottom: 2px solid #333;
+
+  font: 19px/8px 'Vollkorn', serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  pointer-events: auto;
+}
+#dialog button:hover,
+#dialog button:focus,
+#tryagain:hover,
+#tryagain:focus {
+  background-color: #666;
+  cursor: pointer;
+}
+#dialog button:active,
+#tryagain:active {
+  border-bottom: none;
+  border-top: 2px solid #333;
+}
+#points {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  font: 45px/48px 'Vollkorn', serif;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  left: 50%;
+  color: #333;
+  pointer-events: none;
+  z-index: 500;
+}
+#points span {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+#tryagaincontainer {
+  position: absolute;
+  z-index: 500;
+  bottom: 20px;
+  left: 20px;
+}
+.cityPopup {
+  max-width: 300px;
+}
+.leaflet-popup-content {
+}
+.leaflet-popup-content table {
+  margin: 0;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-spacing: 0;
+}
+.leaflet-popup-content table td {
+  padding: 0;
+  padding-right: 4px;
+}
+.leaflet-popup-content a {
+  color: #4576b2;
+}
+.leaflet-container img.poster {
+  max-width: 100% !important;
+}

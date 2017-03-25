@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>New New York</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+    <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div id="map"></div>
+    <div id="panel"><i class="fa fa-spinner fa-pulse"></i> <i>Loading game...</i></div>
+    <div id="dialog">
+        <h1 id="title">New<br />New<br />York</h1>
+        <div id="content">
+          Many movies that are set in New York are not actually filmed in New York. Can you guess whether these films were filmed in the city, and where they were filmed?
+        </div>
+        <p class="buttons">
+            <button type="button" id="start"><span id="introbutton">Start</span></button>
+        </p>
+    </div>
+    <div id="points"></div>
+
+    <div id="tryagaincontainer"><button type="button" id="tryagain"><span>Play Game</span></button></div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/e93d6d689e.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+    <script src="js/leaflet.awesome-markers.min.js"></script>
+
+    <script src="js/game.js"></script>
+  </body>
+</html>
